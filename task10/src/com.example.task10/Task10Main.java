@@ -1,18 +1,20 @@
 package com.example.task10;
 
+import java.util.Arrays;
+
 public class Task10Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int[] arr = {7, 5, 9};
-        System.out.println(numMin(arr));
-         */
     }
 
     static int numMin(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int minIndex = -1;
+        if (Arrays.equals(arr, null) || arr.length == 0) return minIndex;
+        for (int i = 0, min = Integer.MAX_VALUE; i < arr.length; i++) {
+            if (arr[i] <= min) {
+                minIndex = i;
+                min = arr[i];
+            }
+        }
+        return minIndex;
     }
-
 }
