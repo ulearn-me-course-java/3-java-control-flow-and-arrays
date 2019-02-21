@@ -13,6 +13,7 @@ public class Tests {
         Assert.assertEquals("сумма массива из одного элемента равного 5 = 5", 5, Task07Main.sum(new int[]{5}));
         Assert.assertEquals("сумма пусстого массива = 0", 0, Task07Main.sum(new int[]{}));
         Assert.assertEquals("сумма пусстого массива = 0", 0, Task07Main.sum(new int[0]));
+        Assert.assertEquals("сумма пусстого массива = 0", 0, Task07Main.sum(null));
     }
 
 }
