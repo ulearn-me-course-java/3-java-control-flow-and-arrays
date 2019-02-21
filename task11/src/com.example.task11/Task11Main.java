@@ -1,18 +1,31 @@
 package com.example.task11;
 
+import java.util.Arrays;
+
 public class Task11Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int[] arr = {7, 5, 9};
-        swap(arr);
-        System.out.println(java.util.Arrays.toString(arr));
-         */
     }
 
     static void swap(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (Arrays.equals(arr, null) || arr.length == 0) return;
+        int minIndex = getMinIndex(arr);
+        swapWithMinIndex(arr, minIndex);
     }
 
+    private static int getMinIndex(int[] arr) {
+        int minIndex = 0;
+        for (int i = 0, min = Integer.MAX_VALUE; i < arr.length; i++) {
+            if (arr[i] <= min) {
+                minIndex = i;
+                min = arr[i];
+            }
+        }
+        return minIndex;
+    }
+
+    private static void swapWithMinIndex(int[] arr, int minIndex) {
+        int t = arr[0];
+        arr[0] = arr[minIndex];
+        arr[minIndex] = t;
+    }
 }
