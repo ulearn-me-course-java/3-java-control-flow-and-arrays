@@ -10,6 +10,25 @@ public class Task03Main {
     }
 
     static String getNameOfWeekDays(int weekDaysNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        //1 - понедельник, 7 - воскресенье.
+        //Если номер меньше 1 или больше 7 то вернуть "такого дня недели не существует"
+        switch (weekDaysNumber) {
+            case 1:
+                return "понедельник";
+            case 2:
+                return "вторник";
+            case 3:
+                return "среда";
+            case 4:
+                return "четверг";
+            case 5:
+                return "пятница";
+            case 6:
+                return "суббота";
+            case 7:
+                return "воскресенье";
+            default:
+                return "такого дня недели не существует";
+        }
     }
 }
