@@ -10,6 +10,12 @@ public class Task02Main {
     }
 
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        return in(monthNumber, 1, 2) || in(monthNumber, 12, 12) ? "зима" :
+                in(monthNumber, 3, 5) ? "весна" :
+                        in(monthNumber, 6, 8) ? "лето" : "осень";
+    }
+
+    static boolean in(int monthNumber, int from, int to){
+        return monthNumber >= from && monthNumber <= to;
     }
 }
