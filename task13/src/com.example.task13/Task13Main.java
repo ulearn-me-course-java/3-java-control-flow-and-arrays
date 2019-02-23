@@ -1,7 +1,5 @@
 package com.example.task13;
 
-import java.util.ArrayList;
-
 public class Task13Main {
     public static void main(String[] args) {
 
