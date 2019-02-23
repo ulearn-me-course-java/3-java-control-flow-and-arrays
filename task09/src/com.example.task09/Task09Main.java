@@ -1,21 +1,25 @@
 package com.example.task09;
 
+import com.sun.org.apache.xalan.internal.xsltc.util.IntegerArray;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.IntStream;
+
 public class Task09Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
-        /*
-        int[] arr = new int[3];
-        arr[0] = 2;
-        arr[1] = -1;
-        arr[2] = 3;
+
+        int[] arr = new int[]{};
         System.out.println(min(arr));
-         */
+
     }
 
     static int min(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        return IntStream.of(arr).min().orElse(0);
     }
 
 }
