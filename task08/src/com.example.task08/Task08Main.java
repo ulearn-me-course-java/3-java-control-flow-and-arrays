@@ -1,20 +1,29 @@
 package com.example.task08;
 
+import org.assertj.core.util.Arrays;
+
+import java.lang.reflect.Array;
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+
 public class Task08Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int[] arr = new int[2];
-        arr[0] = 2;
-        arr[1] = 3;
-        System.out.println(mult(arr));
-         */
     }
 
     static long mult(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 1;
+        if (arr.length == 0)
+            return 0;
+        long result = 1L;
+        for (int i : arr)
+            result *= i;
+        return result;
+
+    }
+
+    static long mult_with_streams(int[] arr) {
+        return arr.length == 0 ? 0 :
+                IntStream.of(arr).asLongStream().reduce((x, y) -> x * y).getAsLong();
     }
 
 }
