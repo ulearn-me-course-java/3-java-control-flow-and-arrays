@@ -1,5 +1,8 @@
 package com.example.task13;
 
+import java.util.Collections;
+import java.util.stream.IntStream;
+
 public class Task13Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -12,8 +15,9 @@ public class Task13Main {
     }
 
     static int[] removeMoreThen1000(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return  null;
+        return arr == null ? null :
+                IntStream.of(arr).filter(x -> x < 100).toArray();
+
     }
 
 }
