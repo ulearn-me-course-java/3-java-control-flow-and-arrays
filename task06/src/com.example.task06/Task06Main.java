@@ -9,9 +9,12 @@ public class Task06Main {
          */
     }
 
-    static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+    static int getMax(int ... arr) {
+        int max = Integer.MIN_VALUE;
+        for (int value : arr) {
+            max = value > max ? value : max;
+        }
+        return max;
     }
 
 }
