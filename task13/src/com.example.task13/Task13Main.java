@@ -1,5 +1,7 @@
 package com.example.task13;
 
+import java.util.Arrays;
+
 public class Task13Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -12,8 +14,26 @@ public class Task13Main {
     }
 
     static int[] removeMoreThen1000(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return  null;
+        if (Arrays.equals(arr, null) || Arrays.equals(arr, new int[]{}))
+            return arr;
+        int count = getCount(arr);
+        int[] sortArr = new int[arr.length - count];
+        int i = 0;
+        for (int x : arr) {
+            if (x < 1001) {
+                sortArr[i] = x;
+                i++;
+            }
+        }
+        return sortArr;
+    }
+
+    private static int getCount(int[] arr) {
+        int count = 0;
+        for (int e : arr)
+            if (e > 1000)
+                count++;
+        return count;
     }
 
 }
