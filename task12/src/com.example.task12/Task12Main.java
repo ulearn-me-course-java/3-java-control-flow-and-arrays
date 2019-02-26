@@ -12,7 +12,26 @@ public class Task12Main {
     }
 
     static void selectionSort(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        Add(arr, 0);
+        Add(arr,1);
+    }
+
+    static void Add(int[] arr, int start)
+    {
+        int max = Integer.MAX_VALUE;
+        int counter = -1;
+        if(arr == null) return;
+        for (int i = start; i < arr.length; i++)
+        {
+            if(max >= arr[i]) {
+                max = arr[i];
+                counter = i;
+            }
+        }
+        if(counter == -1) return;
+        int temp = arr[counter];
+        arr[counter] = arr[start];
+        arr[start] = temp;
     }
 
 }
