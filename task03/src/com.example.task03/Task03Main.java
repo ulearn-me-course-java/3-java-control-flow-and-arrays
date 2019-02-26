@@ -1,5 +1,7 @@
 package com.example.task03;
 
+import org.omg.CORBA.SystemException;
+
 public class Task03Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -10,6 +12,13 @@ public class Task03Main {
     }
 
     static String getNameOfWeekDays(int weekDaysNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        try {
+            String[] days = {"", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
+            return days[weekDaysNumber];
+        }
+        catch (SystemException e)
+        {
+            return "такого дня недели не существует";
+        }
     }
 }
