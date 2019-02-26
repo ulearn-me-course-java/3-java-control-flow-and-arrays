@@ -10,7 +10,12 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int[] temp = {a, b, c};
+        int max = Integer.MAX_VALUE;
+        for (int f : temp) {
+            if(max > f)
+                max = f;
+        }
+        return max;
     }
 }
