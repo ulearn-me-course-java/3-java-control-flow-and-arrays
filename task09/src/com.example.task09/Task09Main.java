@@ -20,5 +20,4 @@ public class Task09Main {
         }
         return min;
     }
-
 }
