@@ -13,8 +13,12 @@ public class Task08Main {
     }
 
     static long mult(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 1;
+        long multiply = 0;
+        if (arr.length != 0)
+            multiply = 1;
+        for(int num :arr)
+            multiply *= num;
+        return multiply;
     }
 
 }
