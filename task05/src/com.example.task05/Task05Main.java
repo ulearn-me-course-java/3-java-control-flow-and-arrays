@@ -10,7 +10,7 @@ public class Task05Main {
 
     }
     static int getMin(int... numbers) {
-        if (numbers.length < 1)
+        if (numbers.length != 3)
             throw new IllegalArgumentException();
         return Arrays.stream(numbers).min().getAsInt();
     }
