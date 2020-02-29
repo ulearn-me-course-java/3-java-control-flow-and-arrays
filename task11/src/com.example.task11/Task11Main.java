@@ -1,5 +1,7 @@
 package com.example.task11;
 
+import java.util.stream.IntStream;
+
 public class Task11Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -11,8 +13,23 @@ public class Task11Main {
          */
     }
 
+    static int numMin(int[] arr) {
+        return IntStream.range(0, arr.length)
+                .reduce((i, j) -> arr[i] >= arr[j] ? j : i)
+                .getAsInt();
+    }
+
+    static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
     static void swap(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (arr==null||arr.length == 0)
+            return;
+        int min = numMin(arr);
+        swap(arr, 0, min);
     }
 
 }
