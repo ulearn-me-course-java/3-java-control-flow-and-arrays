@@ -1,5 +1,7 @@
 package com.example.task10;
 
+import java.util.stream.IntStream;
+
 public class Task10Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -11,8 +13,9 @@ public class Task10Main {
     }
 
     static int numMin(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        return IntStream.range(0, arr.length)
+                .reduce((i, j) -> arr[i] >= arr[j] ? j : i)
+                .getAsInt();
     }
 
 }
