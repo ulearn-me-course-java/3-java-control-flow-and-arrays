@@ -1,11 +1,14 @@
 package com.example.task02;
 
+import java.util.Arrays;
+
 public class Task02Main {
 
     static String getSeason(int monthNumber) {
-        for (Season season : Season.getDefault()) {
-            if (season.IsSeason(monthNumber)) return season.name;
-        }
-        throw new IllegalArgumentException();
+        return Arrays.stream(Season.getDefault()).
+                filter(o -> o.IsSeason(monthNumber)).
+                findFirst()
+                .get()
+                .name;
     }
 }
