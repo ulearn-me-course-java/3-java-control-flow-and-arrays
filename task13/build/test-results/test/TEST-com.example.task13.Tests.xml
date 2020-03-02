@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.task13.Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-02T06:07:09" hostname="MBP-Semen.Dlink" time="0.004">
+  <properties/>
+  <testcase name="testSelectionSort" classname="com.example.task13.Tests" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
