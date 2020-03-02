@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Task03Main {
     public static void main(String[] args) {
-        System.out.println(getNameOfWeekDays(50));
+        System.out.println(getNameOfWeekDays(5));
     }
 
     static final SimpleDateFormat format = new SimpleDateFormat("EEEE");
