@@ -8,13 +8,24 @@ public class Task03Main {
         System.out.println(getNameOfWeekDays(5));
     }
 
-    static final SimpleDateFormat format = new SimpleDateFormat("EEEE");
-
     static String getNameOfWeekDays(int weekDaysNumber) {
-        if(weekDaysNumber > 7 || weekDaysNumber < 1){
-            return "такого дня недели не существует";
+        switch (weekDaysNumber) {
+            case 1:
+                return "понедельник";
+            case 2:
+                return "вторник";
+            case 3:
+                return "среда";
+            case 4:
+                return "четверг";
+            case 5:
+                return "пятница";
+            case 6:
+                return "суббота";
+            case 7:
+                return "воскресенье";
+            default:
+                return "такого дня недели не существует";
         }
-        Date d = new Date(86400000 * weekDaysNumber + 86400000 * 3);
-        return format.format(d);
     }
 }
