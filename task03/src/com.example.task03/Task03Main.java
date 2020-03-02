@@ -1,15 +1,20 @@
 package com.example.task03;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Task03Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        System.out.println(getNameOfWeekDays(7));
-         */
+        System.out.println(getNameOfWeekDays(50));
     }
 
+    static final SimpleDateFormat format = new SimpleDateFormat("EEEE");
+
     static String getNameOfWeekDays(int weekDaysNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if(weekDaysNumber > 7 || weekDaysNumber < 1){
+            return "такого дня недели не существует";
+        }
+        Date d = new Date(86400000 * weekDaysNumber + 86400000 * 3);
+        return format.format(d);
     }
 }
