@@ -11,6 +11,8 @@ public class Task01Main {
     }
 
     static boolean canGetDriverLicense(int age) {
-        return true;//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (age > 17)
+            return true;
+        return false;
     }
 }
