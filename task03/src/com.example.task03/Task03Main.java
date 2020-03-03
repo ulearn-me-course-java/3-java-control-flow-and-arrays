@@ -8,24 +8,12 @@ public class Task03Main {
         System.out.println(getNameOfWeekDays(5));
     }
 
+    static String[] days = new String[]
+            {"понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
+
     static String getNameOfWeekDays(int weekDaysNumber) {
-        switch (weekDaysNumber) {
-            case 1:
-                return "понедельник";
-            case 2:
-                return "вторник";
-            case 3:
-                return "среда";
-            case 4:
-                return "четверг";
-            case 5:
-                return "пятница";
-            case 6:
-                return "суббота";
-            case 7:
-                return "воскресенье";
-            default:
-                return "такого дня недели не существует";
-        }
+        return weekDaysNumber > 7 || weekDaysNumber < 1
+                ? "такого дня недели не существует"
+                : days[weekDaysNumber - 1];
     }
 }
