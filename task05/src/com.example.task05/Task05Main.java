@@ -4,21 +4,19 @@ public class Task05Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
-        /*
+
         System.out.println(getMin(5,4,3));
-         */
+
     }
 
     static int getMin(int a, int b, int c) {
-        if(a<b && a<c){
+        if(a < b && a < c){
             return a;
         }
-        else if(b>a && b>c){
+        else if(b > a && b > c){
             return b;
         }
-        else{
-            return c;
-        }
+        return c;
     }
 }
-//другой метод: Matn.min((a,b),c)
+//другой метод: Math.min(Math.min(a,b),c)
