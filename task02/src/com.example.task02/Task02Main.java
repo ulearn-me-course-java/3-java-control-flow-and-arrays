@@ -9,7 +9,18 @@ public class Task02Main {
          */
     }
 
-    static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+    static String getSeason(int mn) {
+        if (mn == 12 || mn == 1 || mn == 2){ //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+            return "зима";
+        }
+        else if (mn < 2 && mn > 6){
+            return "весна";
+        }
+        else if (mn < 5 && mn > 9){
+            return "лето";
+        }
+        else {
+            return "осень";
+        }
     }
 }
