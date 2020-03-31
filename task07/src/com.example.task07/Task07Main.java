@@ -7,13 +7,13 @@ public class Task07Main {
         myArray[1] = 10;
         myArray[2] = 10;
         myArray[3] = 0;
-        System.out.println(sum(myArray));
     }
 
     static int sum(int[] arr) {
         int sum=0;
-        for(int i:arr)
-            sum+=i;
+        for(int i=0; i<arr.length; i++) {
+            sum=sum+arr[i];
+        }
         return sum;
     }
 
