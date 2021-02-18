@@ -1,4 +1,5 @@
 package com.example.task05;
+import java.util.*;
 
 public class Task05Main {
     public static void main(String[] args) {
@@ -9,8 +10,7 @@ public class Task05Main {
          */
     }
 
-    static int getMin(int a, int b, int c) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+    static int getMin(int... numbers) {
+        return Arrays.stream(numbers).min().getAsInt();
     }
 }
