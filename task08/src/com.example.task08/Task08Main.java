@@ -17,14 +17,7 @@ public class Task08Main {
     }
 
     static long mult(int[] arr) {
-
-        if (arr.length == 0)
-            return 0;
-
-        long[] b = Arrays.stream(arr).asLongStream().toArray();
-        OptionalLong a = Arrays.stream(b).reduce((x, y) -> x*y);
-        long num = a.getAsLong();
-        return num;
+        return Arrays.stream(arr).asLongStream().reduce((x, y) -> x*y).orElse(0);
     }
 
 }
