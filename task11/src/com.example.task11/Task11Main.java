@@ -2,9 +2,9 @@ package com.example.task11;
 
 public class Task11Main {
     public static void main(String[] args) {
-        int[] arr = {};
-        swap(arr);
-        System.out.println(java.util.Arrays.toString(arr));
+        //int[] arr = {};
+        //swap(arr);
+        //System.out.println(java.util.Arrays.toString(arr));
     }
 
     static void swap(int[] arr) {
