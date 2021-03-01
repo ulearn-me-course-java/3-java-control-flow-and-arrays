@@ -10,8 +10,16 @@ public class Task06Main {
     }
 
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int[] array = new int[3];
+        array[0] = b;
+        array[1] = c;
+        array[2] = d;
+        int max = a;
+        for (int j : array) {
+            if (j > max)
+                max = j;
+        }
+        return max;
     }
 
 }
