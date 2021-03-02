@@ -13,7 +13,8 @@ public class Task08Main {
     }
 
     static long mult(int[] arr) {
-        int result = 1;
+        if (arr.length == 0) return 0;
+        long result = 1;
         for (int i : arr) result *= i;
         return result;
     }
