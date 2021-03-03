@@ -11,8 +11,8 @@ public class Task05Main {
 
     static int getMin(int a, int b, int c) {
         int min = a;
-        if (a > b) min = b;
-        if (a > c) min = c;
+        if (min > b) min = b;
+        if (min > c) min = c;
         return min;
     }
 }
