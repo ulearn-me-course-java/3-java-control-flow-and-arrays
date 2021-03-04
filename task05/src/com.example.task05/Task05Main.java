@@ -9,8 +9,11 @@ public class Task05Main {
          */
     }
 
-    static int getMin(int a, int b, int c) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+    static int getMin(int... nums) {
+        int min = nums[0];
+        for (int num : nums) {
+            if (num < min) min = num;
+        }
+        return min;
     }
 }
