@@ -10,7 +10,12 @@ public class Task04Main {
     }
 
     static void from0to10000() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        StringBuilder string = new StringBuilder();
+        for (int i = 0; i < 10000; i++) {
+            string.append(i);
+            string.append(System.lineSeparator());
+        }
+        System.out.print(string);
     }
 
 }
