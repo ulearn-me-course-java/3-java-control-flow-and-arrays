@@ -10,8 +10,18 @@ public class Task06Main {
     }
 
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+
+        Integer[] arr = new Integer[] {a, b, c, d};
+        Integer max = null;
+
+        for (int num: arr ) {
+            if(max == null || num > max)
+                max = num;
+
+        }
+
+        return max;
+
     }
 
 }
