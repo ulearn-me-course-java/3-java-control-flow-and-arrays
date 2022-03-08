@@ -1,19 +1,35 @@
 package com.example.task13;
+import java.util.*;
 
 public class Task13Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
-        /*
-        int[] arr = {9, 1100, 7, 8};
-        removeMoreThen1000(arr);
-        System.out.println(java.util.Arrays.toString(arr));
-         */
+        int[] a = {10, 20, 1, 2000};
+        int[] b = removeMoreThen1000(a);
+        for(int ar : b)
+        {
+            System.out.print(ar + " ");
+        }
     }
 
     static int[] removeMoreThen1000(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return  null;
+        List<Integer> l = new ArrayList<Integer>();
+
+        for(int i = 0; i < arr.length; i++)
+        {
+           if(arr[i] < 1000)
+           {
+               l.add(arr[i]);
+           }
+        }
+        int[] newArr = new int[l.size()];
+        for(int i = 0; i < newArr.length; i++)
+        {
+            newArr[i] = l.get(i);
+        }
+
+        return newArr;
     }
 
 }
