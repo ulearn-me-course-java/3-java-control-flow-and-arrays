@@ -11,7 +11,11 @@ public class Task06Main {
 
     static int getMax(int a, int b, int c, int d) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        return Math.max(getMax(a, b, c), getMax(a, b, d));
+    }
+
+    static int getMax(int a, int b, int c) {
+        return Math.max(Math.max(a, c), Math.max(a, b));
     }
 
 }
