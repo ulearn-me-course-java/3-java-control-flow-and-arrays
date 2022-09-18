@@ -19,7 +19,7 @@ public class Task13Main {
             for (int elem
                     : arr)
                 if (elem <= 1000) newArrLength++;
-            
+
             int[] newArr = new int[newArrLength];
             int count = 0;
 
