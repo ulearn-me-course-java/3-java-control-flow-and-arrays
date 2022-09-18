@@ -13,6 +13,25 @@ public class Task12Main {
 
     static void selectionSort(int[] arr) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if(arr != null && arr.length != 0)
+        {
+            for(int i = 0; i < arr.length; i++)
+            {
+                int sum = Integer.MAX_VALUE;
+                int count = 0;
+
+                for(int j = i; j < arr.length; j++)
+                {
+                    if(arr[j] < sum)
+                    {
+                        sum = arr[j];
+                        count = j;
+                    }
+                }
+                arr[count] = arr[i];
+                arr[i] = sum;
+            }
+        }
     }
 
 }
