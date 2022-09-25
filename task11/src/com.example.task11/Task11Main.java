@@ -14,5 +14,4 @@ public class Task11Main {
     static void swap(int[] arr) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
     }
-
 }
