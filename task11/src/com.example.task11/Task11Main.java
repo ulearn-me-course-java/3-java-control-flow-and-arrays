@@ -1,5 +1,7 @@
 package com.example.task11;
 
+import static java.util.Objects.isNull;
+
 public class Task11Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -13,6 +15,21 @@ public class Task11Main {
 
     static void swap(int[] arr) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+
+        if(isNull(arr) || arr.length == 0)
+            return;
+
+        int min = Integer.MAX_VALUE;
+        int indexMin = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (min >= arr[i]){
+                min = arr[i];
+                indexMin = i;
+            }
+        }
+
+        arr[indexMin] = arr[0];
+        arr[0] = min;
     }
 
 }
