@@ -1,18 +1,34 @@
 package com.example.task10;
 
+import java.util.Scanner;
+
 public class Task10Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int[] arr = {7, 5, 9};
-        System.out.println(numMin(arr));
-         */
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Введите длину массива: ");
+        int len = in.nextInt();
+
+        int[] arr = new int[len];
+
+        for (int i = 0; i < len; i++) {
+            arr[i] = in.nextInt();
+        }
+
+        System.out.println("Номер минимального элемента массива: " + numMin(arr));
     }
 
     static int numMin(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int min = arr[0], num = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (min > arr[i]) {
+                min = arr[i];
+                num = i;
+            }
+        }
+
+        return num + 1;
     }
 
 }
