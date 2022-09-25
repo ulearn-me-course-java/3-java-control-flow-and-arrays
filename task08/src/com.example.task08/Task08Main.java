@@ -1,20 +1,33 @@
 package com.example.task08;
 
+import java.util.Scanner;
+
 public class Task08Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int[] arr = new int[2];
-        arr[0] = 2;
-        arr[1] = 3;
-        System.out.println(mult(arr));
-         */
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Введите длину массива: ");
+        int len = in.nextInt();
+
+        int[] arr = new int[len];
+
+        for (int i = 0; i < len; i++) {
+            arr[i] = in.nextInt();
+        }
+
+        System.out.println("Произведение элементов массива: " + mult(arr));
     }
 
     static long mult(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 1;
+        if (arr.length == 0){
+            return 0;
+        }
+
+        int mult_arr = 0;
+        for (int el_arr : arr) {
+            mult_arr *= el_arr;
+        }
+        return mult_arr;
     }
 
 }

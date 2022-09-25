@@ -1,21 +1,33 @@
 package com.example.task09;
 
+import java.util.Scanner;
+
 public class Task09Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int[] arr = new int[3];
-        arr[0] = 2;
-        arr[1] = -1;
-        arr[2] = 3;
-        System.out.println(min(arr));
-         */
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Введите длину массива: ");
+        int len = in.nextInt();
+
+        int[] arr = new int[len];
+
+        for (int i = 0; i < len; i++) {
+            arr[i] = in.nextInt();
+        }
+
+        System.out.println("Минимальный элемент массива: " + min(arr));
     }
 
     static int min(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int min = arr[0];
+
+        for (int el_arr : arr) {
+            if(min > el_arr){
+                min = el_arr;
+            }
+        }
+
+        return min;
     }
 
 }

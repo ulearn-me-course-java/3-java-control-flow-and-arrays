@@ -1,15 +1,28 @@
 package com.example.task02;
 
+import java.util.Scanner;
+
 public class Task02Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        System.out.println(getSeason(12));
-         */
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Введите номер месяца: ");
+        int monthNumber = in.nextInt();
+
+        System.out.print(getSeason(monthNumber));
     }
 
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-    }
+        switch (monthNumber){
+            case 1, 2, 12:
+                return "Зима";
+            case 3, 4, 5:
+                return "Весна";
+            case 6, 7, 8:
+                return "Лето";
+            case 9, 10, 11:
+                return "Осень";
+            default:
+                return "Ошибка";
+        }    }
 }
