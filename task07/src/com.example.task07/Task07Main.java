@@ -2,7 +2,6 @@ package com.example.task07;
 
 public class Task07Main {
     public static void main(String[] args) {
-
         int[] myArray = new int[4];
         myArray[0] = 2;
         myArray[1] = 10;
