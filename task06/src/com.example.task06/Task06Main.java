@@ -10,8 +10,12 @@ public class Task06Main {
     }
 
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int[] arr = {a, b, c, d};
+        int max = arr[0];
+        for (int i = 1 ; i < arr.length ; i++) {
+            max = Math.max(max, arr[i]);
+        }
+        return max;
     }
 
 }
