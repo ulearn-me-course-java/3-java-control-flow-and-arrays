@@ -1,6 +1,5 @@
 package com.example.task11;
 
-import org.graalvm.compiler.lir.Variable;
 
 public class Task11Main {
     public static void main(String[] args) {
@@ -12,6 +11,8 @@ public class Task11Main {
     }
 
     static void swap(int[] arr) {
+        if (arr == null) return;
+        if(arr.length == 0) return;
         int min = arr[0];
         for (int j : arr) min = Math.min(min, j);
         int index = 0;
