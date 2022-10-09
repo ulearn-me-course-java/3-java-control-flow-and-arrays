@@ -13,8 +13,15 @@ public class Task08Main {
     }
 
     static long mult(int[] arr) {
+
+        if(arr.length == 0) return 0;
+        long multiplication = 1;
+        for(int i = 0; i < arr.length; i++){
+            multiplication *= arr[i];
+        }
+        return multiplication;
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 1;
+
     }
 
 }
