@@ -1,3 +1,4 @@
+
 package com.example.task01;
 
 public class Task01Main {
@@ -11,6 +12,6 @@ public class Task01Main {
     }
 
     static boolean canGetDriverLicense(int age) {
-        return true;//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        return age >= 18;//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
     }
 }
