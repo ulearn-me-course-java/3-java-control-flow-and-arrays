@@ -5,4 +5,3 @@
 static boolean canGetDriverLicense(int age)
 ```
 P.S. Водительские права в России можно получить с 18 лет.
-
