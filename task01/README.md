@@ -2,7 +2,7 @@
 
 Реализовать метод определяющий может ли человек получить водительские права в России. 
 ```java
-static boolean canGetDriverLicense(int age)
+//static boolean canGetDriverLicense(int age)
 ```
 P.S. Водительские права в России можно получить с 18 лет.
 
