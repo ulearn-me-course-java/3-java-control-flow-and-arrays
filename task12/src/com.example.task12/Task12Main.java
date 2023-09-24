@@ -1,6 +1,6 @@
 package com.example.task12;
 
-public class Task12Main {
+public class    Task12Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
@@ -12,7 +12,22 @@ public class Task12Main {
     }
 
     static void selectionSort(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (arr != null){
+            for (int i = 0; i < arr.length - 1; i++) {
+                int minElementIndex = i;
+                for (int j = i + 1; j < arr.length; j++) {
+                    if (arr[minElementIndex] > arr[j]) {
+                        minElementIndex = j;
+                    }
+                }
+
+                if (minElementIndex != i) {
+                    int temp = arr[i];
+                    arr[i] = arr[minElementIndex];
+                    arr[minElementIndex] = temp;
+                }
+            }
+        }
     }
 
 }

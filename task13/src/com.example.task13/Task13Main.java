@@ -1,5 +1,7 @@
 package com.example.task13;
 
+import java.lang.reflect.Array;
+
 public class Task13Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -12,8 +14,24 @@ public class Task13Main {
     }
 
     static int[] removeMoreThen1000(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return  null;
+        if (arr != null) {
+            int count = 0;
+            for (int i : arr) {
+                if (i <= 1000) {
+                    count += 1;
+                }
+            }
+            int[] newArr = new int[count];
+            int idx = 0;
+            for (int i : arr) {
+                if (i <= 1000) {
+                    newArr[idx] = i;
+                    idx += 1;
+                }
+            }
+            return newArr;
+        } else {
+            return null;
+        }
     }
-
 }
