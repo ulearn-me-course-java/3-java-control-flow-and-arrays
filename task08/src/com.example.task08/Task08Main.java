@@ -18,7 +18,7 @@ public class Task08Main {
         long mul = 1;
         if (arr.length == 0) return 0;
 
-        for (int i : arr){
+        for (int i : arr) {
             mul *= i;
         }
         return mul;

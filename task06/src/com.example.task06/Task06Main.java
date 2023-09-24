@@ -11,7 +11,7 @@ public class Task06Main {
 
     static int getMax(int a, int b, int c, int d) {
         int max = Integer.MIN_VALUE;
-        for (int i : new int[] {a, b, c, d}){
+        for (int i : new int[]{a, b, c, d}) {
             max = Math.max(max, i);
         }
         return max;

@@ -14,11 +14,11 @@ public class Task11Main {
     static void swap(int[] arr) {
         int min = Integer.MAX_VALUE;
         int index = 0;
-        if(arr == null) return;
-        if(arr.length == 0) return;
+        if (arr == null) return;
+        if (arr.length == 0) return;
 
-        for (int i = 0; i < arr.length; i++){
-            if(arr[i] <= min) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] <= min) {
                 min = arr[i];
                 index = i;
             }

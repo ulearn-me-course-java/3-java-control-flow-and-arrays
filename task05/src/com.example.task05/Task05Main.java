@@ -13,7 +13,7 @@ public class Task05Main {
 
     static int getMin(int a, int b, int c) {
         int min = Integer.MAX_VALUE;
-        for (int i : new int[] {a, b, c}){
+        for (int i : new int[]{a, b, c}) {
             min = Math.min(min, i);
         }
         return min;
