@@ -8,6 +8,10 @@ public class Task13Main {
     }
 
     static int[] removeMoreThen1000(int[] arr) {
+        if (arr == null){
+            return null;
+        }
+
         int count = 0;
         for (int i : arr) {
             if (i <= 1000) {
