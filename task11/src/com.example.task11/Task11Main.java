@@ -2,8 +2,6 @@ package com.example.task11;
 
 public class Task11Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
 
         int[] arr = {7, 5, 9};
         swap(arr);
@@ -19,7 +17,7 @@ public class Task11Main {
         int min = arr[0];
         int index = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] <= min) {
+            if (arr[i] < min) {
                 min = arr[i];
                 index = i;
             }

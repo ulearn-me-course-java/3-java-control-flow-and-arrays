@@ -2,8 +2,6 @@ package com.example.task08;
 
 public class Task08Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
 
         int[] arr = new int[2];
         arr[0] = 2;
@@ -17,7 +15,7 @@ public class Task08Main {
             return 0L;
         }
         long multArr = 1;
-        for (int i = 0; i < arr.length; i++ ) {
+        for (int i = 0; i < arr.length; i++) {
 
             multArr *= arr[i];
         }
