@@ -2,9 +2,8 @@ package com.example.task09;
 
 public class Task09Main {
     public static void main(String[] args) {
-        int[] arr = new int[1];
-        arr[0] = 2147483647;
-        System.out.println(min(arr));
+        Tests tests = new Tests();
+        tests.testMin();
     }
 
     static int min(int[] arr) {

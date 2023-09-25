@@ -2,7 +2,8 @@ package com.example.task02;
 
 public class Task02Main {
     public static void main(String[] args) {
-        System.out.println(getSeason(1));
+        Tests tests = new Tests();
+        tests.testGetSeason();
     }
 
     static String getSeason(int monthNumber) {

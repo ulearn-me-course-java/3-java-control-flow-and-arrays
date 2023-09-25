@@ -2,7 +2,9 @@ package com.example.task03;
 
 public class Task03Main {
     public static void main(String[] args) {
-        System.out.println(getNameOfWeekDays(7));
+        Tests tests = new Tests();
+        tests.testGetNameOfWeekDays();
+        System.out.println(getNameOfWeekDays(0));
     }
 
     static String getNameOfWeekDays(int weekDaysNumber) {

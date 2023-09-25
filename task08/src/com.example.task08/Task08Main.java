@@ -2,8 +2,8 @@ package com.example.task08;
 
 public class Task08Main {
     public static void main(String[] args) {
-        int[] arr = new int[0];
-        System.out.println(mult(arr));
+        Tests tests = new Tests();
+        tests.testMult();
     }
 
     static long mult(int[] arr) {

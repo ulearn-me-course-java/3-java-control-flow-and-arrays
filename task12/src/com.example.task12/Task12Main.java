@@ -2,9 +2,8 @@ package com.example.task12;
 
 public class Task12Main {
     public static void main(String[] args) {
-        int[] arr = {5, 5, 5};
-        selectionSort(arr);
-        System.out.println(java.util.Arrays.toString(arr));
+        Tests tests = new Tests();
+        tests.testSelectionSort();
     }
 
     static void selectionSort(int[] arr) {

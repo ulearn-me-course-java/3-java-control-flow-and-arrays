@@ -10,5 +10,4 @@ public class Task04Main {
             System.out.println(i);
         }
     }
-
 }
