@@ -10,7 +10,15 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int[] input = {a, b, c};
+        int minNumber = a;
+
+        for(int i = 0; i < input.length - 1; i++){
+            if(input[i] > input[i + 1]){
+                minNumber = input[i + 1];
+            }
+        }
+
+        return minNumber;
     }
 }

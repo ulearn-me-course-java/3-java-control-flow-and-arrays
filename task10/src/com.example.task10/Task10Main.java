@@ -2,17 +2,24 @@ package com.example.task10;
 
 public class Task10Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int[] arr = {7, 5, 9};
+
+        int[] arr = {7, 10, 9};
         System.out.println(numMin(arr));
-         */
+
     }
 
     static int numMin(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int minNumber = arr[0];
+        int index0fMinElement = 0;
+
+        for(int i = 1; i < arr.length; i++){
+            if(minNumber >= arr[i]){
+                minNumber = arr[i];
+                index0fMinElement = i;
+            }
+        }
+
+        return index0fMinElement;
     }
 
 }
