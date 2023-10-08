@@ -3,9 +3,10 @@ package com.example.task13;
 public class Task13Main {
     public static void main(String[] args)
     {
+
         int[] arr = {9, 1100, 7, 8};
-        removeMoreThen1000(arr);
-        System.out.println(java.util.Arrays.toString(arr));
+        int[] result = removeMoreThen1000(arr);
+        System.out.println(java.util.Arrays.toString(result));
     }
 
     static int[] removeMoreThen1000(int[] arr)
@@ -24,7 +25,7 @@ public class Task13Main {
             {
                 continue;
             }
-            sb.append(i).append(" ");
+                sb.append(i).append(" ");
         }
         String[] resStrings = sb.toString().split(" ");
         int[] res = new int[resStrings.length];
