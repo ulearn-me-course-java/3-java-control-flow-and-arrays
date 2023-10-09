@@ -4,8 +4,8 @@ public class Task13Main {
     public static void main(String[] args) {
 
         int[] arr = {9, 1100, 7, 8};
-        removeMoreThen1000(arr);
-        System.out.println(java.util.Arrays.toString(arr));
+        int [] result = removeMoreThen1000(arr);
+        System.out.println(java.util.Arrays.toString(result));
 
     }
 
