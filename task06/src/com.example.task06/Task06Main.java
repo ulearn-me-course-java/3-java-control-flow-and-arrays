@@ -10,8 +10,15 @@ public class Task06Main {
     }
 
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int maxNumber = Integer.MIN_VALUE;
+        int[] array = {a, b, c, d};
+
+        for (int number : array){
+            if (number > maxNumber) {
+                maxNumber = number;
+            }
+        }
+        return maxNumber;
     }
 
 }
