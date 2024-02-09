@@ -14,10 +14,10 @@ public class Task12Main {
             return;
         }
 
-        for (int i = 0; i < arr.length; ++i){
+        for (int i = 0; i < arr.length; i++){
             int min = Integer.MAX_VALUE;
             int minElementNumber = 0;
-            for (int j = i; j < arr.length; ++j){
+            for (int j = i; j < arr.length; i++){
                 if(min > arr[j]){
                     min = arr[j];
                     minElementNumber = j;

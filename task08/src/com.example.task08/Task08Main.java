@@ -3,8 +3,8 @@ public class Task08Main {
     public static void main(String[] args) {
 
         int[] arr = new int[2];
-        //        arr[0] = 0;
-        //arr[1] = 0;
+        arr[0] = 0;
+        arr[1] = 0;
         System.out.println(mult(arr));
 
     }
