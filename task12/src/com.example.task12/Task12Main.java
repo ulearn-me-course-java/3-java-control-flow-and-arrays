@@ -12,7 +12,20 @@ public class Task12Main {
     }
 
     static void selectionSort(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-    }
+        if(arr == null) return;
+        for (int i = 0; i < arr.length; i++) {    // i - номер текущего шага
+            int pos = i;
+            int min = arr[i];
+            // цикл выбора наименьшего элемента
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < min) {
+                    pos = j;    // pos - индекс наименьшего элемента
+                    min = arr[j];
+                }
+            }
+            arr[pos] = arr[i];
+            arr[i] = min;    // меняем местами наименьший с array[i]
+        }
 
+    }
 }
