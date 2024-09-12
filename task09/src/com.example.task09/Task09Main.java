@@ -1,4 +1,6 @@
 package com.example.task09;
+import java.util.Arrays;
+
 
 public class Task09Main {
     public static void main(String[] args) {
@@ -14,8 +16,13 @@ public class Task09Main {
     }
 
     static int min(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int min = arr[0];
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
     }
 
 }

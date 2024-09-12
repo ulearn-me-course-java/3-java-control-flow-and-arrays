@@ -10,7 +10,15 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
+        int[] arr = {a,b,c};
+        int min = arr[0];
+
+        for (int i = 0; i < 3; i++){
+            if (arr[i] < min){
+                min = arr[i];
+            }
+        }
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        return min;
     }
 }
