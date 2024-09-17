@@ -1,17 +1,30 @@
 package com.example.task06;
 
+import java.util.Scanner;
+
 public class Task06Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        System.out.println(getMax(1, 2, 3, 4));
-         */
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("a = ");
+        int a = in.nextInt();
+
+        System.out.print("b = ");
+        int b = in.nextInt();
+
+        System.out.print("c = ");
+        int c = in.nextInt();
+
+        System.out.print("d = ");
+        int d = in.nextInt();
+
+        System.out.print(getMax(a, b, c, d));
     }
 
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int max_f = Math.max(a, b);
+        int max_s = Math.max(c,d);
+        return Math.max(max_s, max_f);
     }
 
 }
