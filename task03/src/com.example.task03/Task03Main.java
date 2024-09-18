@@ -1,15 +1,12 @@
 package com.example.task03;
 
 public class Task03Main {
-    public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        System.out.println(getNameOfWeekDays(7));
-         */
-    }
+    public static void main(String[] args) {}
 
     static String getNameOfWeekDays(int weekDaysNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        String[] weekDays = {"понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
+        if (weekDaysNumber > 7 || weekDaysNumber < 1)
+            return "такого дня недели не существует";
+        return weekDays[weekDaysNumber-1];
     }
 }

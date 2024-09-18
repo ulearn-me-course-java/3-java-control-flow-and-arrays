@@ -1,15 +1,15 @@
 package com.example.task02;
 
 public class Task02Main {
-    public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        System.out.println(getSeason(12));
-         */
-    }
+    public static void main(String[] args) {}
 
-    static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+    static String getSeason(int monthNumber)
+    {
+        String[] seasons = {
+                "зима", "зима", "весна", "весна", "весна", "лето",
+                "лето", "лето", "осень", "осень", "осень", "зима"
+        };
+
+        return seasons[monthNumber-1];
     }
 }
