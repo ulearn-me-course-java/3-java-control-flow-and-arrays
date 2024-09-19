@@ -5,14 +5,27 @@ public class Task11Main {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
         /*
-        int[] arr = {7, 5, 9};
+        int[] arr = null;
         swap(arr);
         System.out.println(java.util.Arrays.toString(arr));
-         */
+*/
     }
 
     static void swap(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (arr != null && arr.length > 0){
+            int min = arr[0];
+            int min_index = 0;
+            for (int i = 1; i < arr.length; i++) {
+                if (arr[i] <= min) {
+                    min = arr[i];
+                    min_index = i;
+                }
+            }
+
+            int temp = arr[0];
+            arr[0] = min;
+            arr[min_index] = temp;
+        }
     }
 
 }
