@@ -10,6 +10,23 @@ public class Task02Main {
     }
 
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if(isBetween(1,2, monthNumber)){
+            return "зима";
+        }
+        else if(isBetween(3, 5,monthNumber)){
+            return "весна";
+        }
+        else if(isBetween(6,8, monthNumber)){
+            return "лето";
+        }
+        else if (isBetween(9, 11, monthNumber)) {
+            return "осень";
+        }
+            return "зима";
+        // return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+    }
+
+    static boolean isBetween(int min, int max, int value){
+        return value >= min && value <= max;
     }
 }
