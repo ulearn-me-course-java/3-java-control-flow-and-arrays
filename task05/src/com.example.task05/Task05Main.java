@@ -1,5 +1,6 @@
 package com.example.task05;
 
+
 public class Task05Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -10,7 +11,13 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
+
+        if(a < b & a < c) return a;
+        if(b < a & b < c) return b;
+        else return c;
+        //return Math.min(a, Math.min(b,c));
+
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+
     }
 }
