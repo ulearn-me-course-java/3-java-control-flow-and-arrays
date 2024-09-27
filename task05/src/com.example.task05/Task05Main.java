@@ -10,7 +10,9 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        /*int min = a > b ? b : a;
+        if (min > c) min = c;
+        return min;*/
+        return Math.min(a,Math.min(b,c));
     }
 }
