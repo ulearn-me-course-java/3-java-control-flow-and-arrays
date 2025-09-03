@@ -1,6 +1,7 @@
 package com.example.task13;
 
-public class Task13Main {
+public class Task13Main
+{
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
@@ -11,9 +12,28 @@ public class Task13Main {
          */
     }
 
-    static int[] removeMoreThen1000(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return  null;
-    }
+    static int[] removeMoreThen1000(int[] arr){
+        if (arr == null) {
+            return null;
+        }
 
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] <= 1000) {
+                count++;
+            }
+        }
+
+        int[] newArr = new int[count];
+        int newIndex = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] <= 1000) {
+                newArr[newIndex] = arr[i];
+                newIndex++;
+            }
+        }
+
+        return newArr;
+    }
 }

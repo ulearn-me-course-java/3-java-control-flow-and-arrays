@@ -2,14 +2,13 @@ package com.example.task02;
 
 public class Task02Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         System.out.println(getSeason(12));
-         */
     }
 
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if(monthNumber%12 == 0 || monthNumber%12 == 1 || monthNumber%12 == 2) return  "зима";
+        else if(monthNumber%12 == 3 || monthNumber%12 == 4 || monthNumber%12 == 5) return  "весна";
+        else if(monthNumber%12 == 6 || monthNumber%12 == 7 || monthNumber%12 == 8) return  "лето";
+        return  "осень";
     }
 }
