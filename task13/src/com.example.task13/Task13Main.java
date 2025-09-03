@@ -2,8 +2,7 @@ package com.example.task13;
 
 public class Task13Main
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
         /*
