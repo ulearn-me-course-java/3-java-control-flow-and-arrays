@@ -1,5 +1,8 @@
 package com.example.task09;
 
+import java.util.ArrayDeque;
+import java.util.Arrays;
+
 public class Task09Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -14,8 +17,11 @@ public class Task09Main {
     }
 
     static int min(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int bare_minimum = arr[0];
+        for(int i: arr){
+            if (i < bare_minimum) bare_minimum = i;
+        }
+        return bare_minimum;
     }
 
 }
