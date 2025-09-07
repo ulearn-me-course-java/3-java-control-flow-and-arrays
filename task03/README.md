@@ -5,3 +5,4 @@
 ```java
 static String getNameOfWeekDays(int weekDaysNumber)
 ```
+е
