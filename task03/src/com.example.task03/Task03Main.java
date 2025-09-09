@@ -10,6 +10,8 @@ public class Task03Main {
     }
 
     static String getNameOfWeekDays(int weekDaysNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (weekDaysNumber < 1 || weekDaysNumber > 7) return "такого дня недели не существует";
+        String[] numberToName = {"понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
+        return numberToName[weekDaysNumber - 1];
     }
 }
