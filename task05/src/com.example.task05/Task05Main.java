@@ -1,5 +1,8 @@
 package com.example.task05;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Task05Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -10,7 +13,12 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+       int[] nums = {a, b, c};
+       int min = Integer.MAX_VALUE;
+
+       for (int i : nums){
+           if (i < min) min = i;
+       }
+       return min;
     }
 }
