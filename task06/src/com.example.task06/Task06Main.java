@@ -11,7 +11,16 @@ public class Task06Main {
 
     static int getMax(int a, int b, int c, int d) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int max = Integer.MIN_VALUE;
+
+        int[] nums = {a, b, c, d};
+        for (int i : nums){
+            if (i > max){
+                max = i;
+            }
+        }
+
+        return max;
     }
 
 }
